@@ -1,14 +1,54 @@
 {
-	functions:[
+	"functions":[
 		{
-			"name":"main_int",
-			"attributes":["x_int","y_char"];
-			"dependencies":["func1_void","func2_int*"],
-			"commands":[
-				{
-					
-				}
-			]
+			"id":"main_int",
+			"attributes":["variableId","variableId"],
+			"commands":["command1Id","command2Id"]
+				
+		}
+	],
+	"commands":[
+		{
+			"id":"command1",
+			"nextId":"command2",
+			"operation":"operation1",
+			"functionCall":"x_int",
+			"if":{
+				"conditionId":"condition1",
+				"commandId":"command2",
+				"else":"commandId"
+			},
+			"for":{
+				"initialization":"commandId",
+				"condition":"conditionId",
+				"increment":"commandId"
+			},
+			"while":{
+				"condition":"conditionId",
+				"command":"commandId"
+			}
+		}
+	],
+	"operations":[
+		{
+			"id":"operation1",
+			"attributeId1":"command3",
+			"attributeId2":"command4"
+		}
+	],
+	"conditions":[
+		{
+			"id":"condition1",
+			"attribute1Id":"command3",
+			"attribute2Id":"command4",
+			"operation":"operationName"
+		}
+	],
+	"variables":[
+		{
+			"id":"var1",
+			"dataType":"String",
+			"val":"stringVal"
 		}
 	]
 }
