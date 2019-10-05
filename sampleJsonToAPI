@@ -3,7 +3,7 @@
 		{
 			"id":"main_int",
 			"attributes":["variableId","variableId"],
-			"commands":["command1Id","command2Id"]
+			"command":"commandId"
 				
 		}
 	],
@@ -11,20 +11,20 @@
 		{
 			"id":"command1",
 			"nextId":"command2",
-			"operation":"operation1",
+			"operationId":"operation1",
 			"functionCall":"x_int",
 			"if":{
 				"conditionId":"condition1",
 				"commandId":"command2",
-				"else":"commandId"
+				"elseCommandId":"commandId"
 			},
 			"for":{
 				"initialization":"commandId",
-				"condition":"conditionId",
-				"increment":"commandId"
+				"conditionId":"conditionId",
+				"incrementCommandId":"commandId"
 			},
 			"while":{
-				"condition":"conditionId",
+				"conditionId":"conditionId",
 				"command":"commandId"
 			}
 		}
@@ -39,8 +39,8 @@
 	"conditions":[
 		{
 			"id":"condition1",
-			"attribute1Id":"command3",
-			"attribute2Id":"command4",
+			"attributeId1":"command3",
+			"attributeId2":"command4",
 			"operation":"operationName"
 		}
 	],
