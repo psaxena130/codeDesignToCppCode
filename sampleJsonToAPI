@@ -1,0 +1,14 @@
+{
+	functions:[
+		{
+			"name":"main_int",
+			"attributes":["x_int","y_char"];
+			"dependencies":["func1_void","func2_int*"],
+			"commands":[
+				{
+					
+				}
+			]
+		}
+	]
+}
